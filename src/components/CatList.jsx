@@ -23,7 +23,7 @@ const CatList = ({ cats }) => {
     );
 };
 
-CatList.propTypes = {}
+CatList.propTypes = {
 	cats: PropTypes.arrayOf(PropTypes.shape({
 		name: PropTypes.string.isRequired,
 		personality: PropTypes.string.isRequired,
