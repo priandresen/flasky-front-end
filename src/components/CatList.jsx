@@ -23,4 +23,13 @@ const CatList = ({ cats }) => {
     );
 };
 
+CatList.propTypes = {
+	cats: PropTypes.arrayOf(PropTypes.shape({
+		name: PropTypes.string.isRequired,
+		personality: PropTypes.string.isRequired,
+		color: PropTypes.string.isRequired,
+		caretaker: PropTypes.string.isRequired
+	})).isRequired
+};
+
 export default CatList;

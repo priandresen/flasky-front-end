@@ -24,12 +24,10 @@ const Cat = ({ name, personality, color, caretaker }) => {
 };
 
 Cat.propTypes = {
-  cats: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    personality: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
-    caretaker: PropTypes.string.isRequired
-  })).isRequired
+  name: PropTypes.string.isRequired,
+  personality: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  caretaker: PropTypes.string.isRequired
 };
 
 
